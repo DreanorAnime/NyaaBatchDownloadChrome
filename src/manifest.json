@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "description": "Adds a button on https://www.nyaa.se to download the current torrent results. Made by Dreanor",
+  "homepage_url": "https://github.com/dreanor/NyaaBatchDownloadChrome",
+  "name": "Nyaa Batch Download",
+  "version": "1.0",
+  "content_scripts": [
+   {
+     "matches": ["*://*.nyaa.se/*"],
+     "js": ["content.js"]
+   }
+  ],
+  "icons": {
+   "48":"nyaa.png" 
+  },
+  "browser_action": {
+   "default_icon": "nyaa.png"
+  }
+}
